@@ -16,7 +16,7 @@ $('li').not('.business')
 
 ## Object Reference
 
-Always use `@` to refer to the current scope.
+Always use `@`, not `this.`, to refer to the current scope.
 
 ## jQuery Events
 
