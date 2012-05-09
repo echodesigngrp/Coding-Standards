@@ -2,14 +2,14 @@
 
 ## Naming Conventions for Classes and IDs
 
-Always use hyphens (*Figure 1*), not underscores or camelcase (*Figure 2*.)
+Always use hyphens, not underscores or camelcase.
 
-**Figure 1:**
+**Correct:**
 ```HTML
 <section class="event-sheet"></section>
 ```
 
-**Figure 2:**
+**Incorrect:**
 ```HTML
 <section class="eventSheet"></section>
 <section class="event_sheet"></section>

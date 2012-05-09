@@ -2,28 +2,28 @@
 
 ## Naming Conventions for Variables
 
-Always uses underscore (*Figure 1*), not camelcase(*Figure 2*.)
+Always uses underscore, not camelcase.
 
-**Figure 1:**
+**Correct:**
 ```CoffeeScript
 add_numbers = (x, y) -> alert(x+y)
 ```
 
-**Figure 2:**
+**Incorrect:**
 ```CoffeeScript
 addNumbers = (x, y) -> alert(x+y)
 ```
 
 ## Methods/Functions
 
-Though functions do not need to have parenthesis in CoffeeScript (*Figure 3*), it has a tendency to make the code harder to read. Always wrap function arguments in parenthesis (*Figure 4*.)
+Though functions do not need to have parenthesis in CoffeeScript, it has a tendency to make the code harder to read. Always wrap function arguments in parenthesis.
 
-**Figure 3:**
+**Correct:**
 ```CoffeeScript
 $('li').not '.business'
 ```
 
-**Figure 4:**
+**Incorrect:**
 ```CoffeeScript
 $('li').not('.business')
 ```
@@ -34,11 +34,18 @@ Always use `@`, not `this.`, to refer to the current scope.
 
 ## jQuery Events
 
-Always bind event methods (`=>`) and use Event object's target property to grab the element (*Figure 5*.) This keeps the scope from changing.
+Always bind event methods (`=>`) and use Event object's target property to grab the element. This keeps the scope from changing.
 
-**Figure 5:**
+**Correct:**
 ```CoffeeScript
 $('li').click((e) =>
 	$(e.target).hide()
+)
+```
+
+**Incorrect:**
+```CoffeeScript
+$('li').click((e) ->
+	$(this).hide()
 )
 ```
