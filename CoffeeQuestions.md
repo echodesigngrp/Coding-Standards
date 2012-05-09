@@ -37,3 +37,15 @@ obj =
   city: 'Lemont'
   state: 'Illinois'
 ```
+
+## Object literal in a function argument
+
+**No brackets**
+```CoffeeScript
+window.console.log(name: 'Echo', address: '106 Stephen Street, Second Floor')
+```
+
+**Brackets**
+```CoffeeScript
+window.console.log({name: 'Echo', address: '106 Stephen Street, Second Floor'})
+```
