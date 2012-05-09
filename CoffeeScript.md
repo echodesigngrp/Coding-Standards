@@ -14,6 +14,21 @@ add_numbers = (x, y) -> alert(x+y)
 addNumbers = (x, y) -> alert(x+y)
 ```
 
+Keep line length in mind.
+
+**Crazy:**
+```CoffeeScript
+items = if i == 15 ? item[15] : (if i == 14 ? item[14] : (if i == 13 ? item[13] : item[1]))
+```
+
+**Logical, Sane:**
+```CoffeeScript
+items  = item[15] if i == 15
+items  = item[14] if i == 14
+items  = item[13] if i == 13
+items ?= item[1]
+```
+
 ## Methods/Functions
 
 Though functions do not need to have parenthesis in CoffeeScript, it has a tendency to make the code harder to read. Always wrap function arguments in parenthesis.
