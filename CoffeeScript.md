@@ -20,7 +20,7 @@ Always use `@` to refer to the current scope.
 
 ## jQuery Events
 
-Always bind events and use Event object's target property to grab the element (*Figure 3*.) This keeps the scope from changing.
+Always bind event methods (`=>`) and use Event object's target property to grab the element (*Figure 3*.) This keeps the scope from changing.
 
 **Figure 3:**
 ```CoffeeScript
